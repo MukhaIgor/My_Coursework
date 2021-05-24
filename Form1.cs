@@ -86,7 +86,7 @@ namespace WindowsFormsApp1
         {
             try
             {
-                bool payment = Convert.ToBoolean(textBox4.Text);
+                bool payment = checkBox1.Checked;
                 int Subscriber_Code = Convert.ToInt32(textBox5.Text);
                 string query = "UPDATE Card_File SET Оплата = " + payment + " WHERE [Код абонента] = " + Subscriber_Code;
                 OleDbCommand command_update = new OleDbCommand(query, Database_Connection);

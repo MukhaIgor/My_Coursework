@@ -56,7 +56,6 @@ namespace WindowsFormsApp1
             this.button2 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -64,6 +63,7 @@ namespace WindowsFormsApp1
             this.абонентівПоТарифуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.абонентаПоНомеруToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.абонентівПоЗдійсненнюОплатиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardFileBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.картотека_абонентів_АТСDataSet)).BeginInit();
@@ -102,7 +102,7 @@ namespace WindowsFormsApp1
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 301);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 308);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
@@ -292,7 +292,7 @@ namespace WindowsFormsApp1
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.PeachPuff;
+            this.button2.BackColor = System.Drawing.Color.Yellow;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.Location = new System.Drawing.Point(1055, 52);
             this.button2.Name = "button2";
@@ -318,19 +318,12 @@ namespace WindowsFormsApp1
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.PeachPuff;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(450, 260);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(441, 258);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(245, 25);
+            this.label5.Size = new System.Drawing.Size(275, 40);
             this.label5.TabIndex = 15;
-            this.label5.Text = "Введіть \"True\" / \"False\"";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(730, 265);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 16;
+            this.label5.Text = "(Натисніть на чекбокс, \r\nякщо заборгованості немає)";
             // 
             // label6
             // 
@@ -393,15 +386,26 @@ namespace WindowsFormsApp1
             this.абонентівПоЗдійсненнюОплатиToolStripMenuItem.Text = "абонентів по здійсненню оплати";
             this.абонентівПоЗдійсненнюОплатиToolStripMenuItem.Click += new System.EventHandler(this.абонентівПоЗдійсненнюОплатиToolStripMenuItem_Click);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkBox1.Location = new System.Drawing.Point(730, 260);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(110, 29);
+            this.checkBox1.TabIndex = 20;
+            this.checkBox1.Text = "Оплата";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1291, 706);
+            this.ClientSize = new System.Drawing.Size(1291, 713);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button2);
@@ -460,7 +464,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -468,6 +471,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.ToolStripMenuItem абонентівПоТарифуToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem абонентаПоНомеруToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem абонентівПоЗдійсненнюОплатиToolStripMenuItem;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
